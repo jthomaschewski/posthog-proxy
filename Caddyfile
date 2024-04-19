@@ -1,12 +1,12 @@
 :80 {
   handle /static {
-    reverse_proxy https://us-assets.i.posthog.com:443 {
-      header_up Host us-assets.i.posthog.com
+    reverse_proxy https://eu-assets.i.posthog.com:443 {
+      header_up Host eu-assets.i.posthog.com
     }
   }
   handle {
-    reverse_proxy https://us.i.posthog.com:443 {
-      header_up Host us.i.posthog.com
+    reverse_proxy https://eu.i.posthog.com:443 {
+      header_up Host eu.i.posthog.com
     }
   }
 }
